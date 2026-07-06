@@ -2,28 +2,27 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CourseService {
-    getAllCourses {
-        return 'Returning all courses';
-    }
+  getAllCourses() {
+    return 'Showing All Courses';
+  }
 
-    getCourseById(id: string) {
-        return `Showing course with ID: ${id}`;
-    }
+  getCourseById(id: string) {
+    return `Showing Course with ID: ${id}`;
+  }
 
-    createCourse() {
-    return 'Creating a new course';
+  createCourse() {
+    return 'Create Course';
   }
 
   updateCourse(id: string) {
-    return `Updating course with ID: ${id}`;
+    return `Update Course ${id}`;
   }
 
   patchCourse(id: string) {
-    return `Partially updating course with ID: ${id}`;
+    return `Patch Course ${id}`;
   }
 
   deleteCourse(id: string) {
-    return `Deleting course with ID: ${id}`;
+    return `Delete Course ${id}`;
   }
-
 }
