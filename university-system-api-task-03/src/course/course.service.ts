@@ -12,6 +12,5 @@ getAllCourses() {
 
   createCourse(name: string, code: string) {
     return { message: 'Course created', data: { name, code } };
-  }
-  
+  } 
 }
